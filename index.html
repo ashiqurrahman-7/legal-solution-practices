@@ -8,65 +8,79 @@
 </head>
 <body>
     <header class="max-w-[1130px] mx-auto pt-5">
-        <nav class="flex items-center justify-between">
-            <div class="flex items-center gap-5">
-                <img class="w-9" src="legal-solution-resources/images/business.png" alt="">
-               <h3 class="text-3xl font-extrabold font-serif">Justice</h3>
-            </div>
-            <div class="menu">
-                <ul class="flex gap-7">
-                    <li class= "hover:text-red-600">Home</li>
-                    <li class= "hover:text-red-600">Services</li>
-                    <li class= "hover:text-red-600">Cases</li>
-                    <li class= "hover:text-red-600">Blogs</li>
-                    <li class= "hover:text-red-600">Contact Us</li>
-                </ul>
-            </div>
+        <nav class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 ">
 
-            <button class="bg-yellow-600 px-6 py-3 rounded font-semibold text-white hover:bg-yellow-700" text-white text-[18px]">Free Consultation</button>
-        </nav>
+  <!-- Logo Row -->
+  <div class="flex items-center gap-5 justify-center md:justify-start">
+    <img class="w-9" src="legal-solution-resources/images/business.png" alt="">
+    <h3 class="text-3xl font-extrabold font-serif">Justice</h3>
+  </div>
+
+  <!-- Menu Row -->
+  <div class="menu">
+    <ul class="flex flex-wrap justify-center gap-5">
+      <li class="hover:text-red-600 cursor-pointer">Home</li>
+      <li class="hover:text-red-600 cursor-pointer">Services</li>
+      <li class="hover:text-red-600 cursor-pointer">Cases</li>
+      <li class="hover:text-red-600 cursor-pointer">Blogs</li>
+      <li class="hover:text-red-600 cursor-pointer">Contact Us</li>
+    </ul>
+  </div>
+
+  <!-- Button Row -->
+  <div class="flex justify-center md:justify-end">
+    <button class="bg-yellow-600 px-6 py-3 rounded font-semibold text-white hover:bg-yellow-700">
+      Free Consultation
+    </button>
+  </div>
+
+</nav>
+
 
          <!-- Hero Section -->
-  <section class="max-w-[1130px] mx-auto py-9 mt-6">
-    <div class="relative rounded-xl">
+ <section class="max-w-[1130px] mx-auto py-9 mt-6">
+  <div class="relative rounded-xl overflow-hidden">
 
-      <!-- Background Image -->
-      <img src="legal-solution-resources/images/banner.png"
-        alt="Legal Background"
-        class="w-full h-[450px] object-cover"
-      />
+    <!-- Background Image -->
+    <img
+      src="legal-solution-resources/images/banner.png"
+      alt="Legal Background"
+      class="w-full h-[450px] object-cover"
+    />
 
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/20 flex items-center justify-center text-center">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/20 flex items-center justify-center text-center px-4">
 
+      <!-- Banner Content -->
+      <div class="max-w-[585px] text-white">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+          We Provide Effective <br class="hidden sm:block" />
+          Legal Solutions
+        </h1>
 
-        <!-- banner content  -->
-        <div class="max-w-[585px] text-white">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4">
-            We Provide Effective <br />
-            Legal Solutions
-          </h1>
+        <p class="text-gray-300 mb-8">
+          There are many variations of passages of Lorem Ipsum available,
+          but the majority have suffered alteration in some form, by injected humour.
+        </p>
 
-          <p class="text-gray-400 mb-8">
-            There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, by injected humour.
-          </p>
-
-          <!-- Search Box -->
-          <div class="flex justify-center">
-            <input
-              type="text"
-              placeholder="Search your services"
-              class="w-full sm:w-[380px] px-4 py-3 rounded-md text-gray-700 bg-white mr-4"/>
-            <button class="bg-[#B68C5A] px-6 py-3 rounded-md hover:bg-[#9f7749]">
-              Search
-            </button>
-          </div>
+        <!-- Search Box (Responsive) -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center ">
+          <input
+            type="text"
+            placeholder="Search your services"
+            class="w-full sm:w-[380px] px-4 py-3 rounded-md text-gray-700 bg-white"
+          />
+          <button
+            class="bg-[#B68C5A] px-6 py-3 rounded-md hover:bg-[#9f7749] w-full sm:w-auto ">
+            Search
+          </button>
         </div>
-
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
     </header>
 
 
@@ -84,8 +98,8 @@
        </section>
 
        <!-- card section start from here  -->
-        <section class="">
-          <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 justify-center gap-6">
+        <section>
+          <div class="grid grid-cols-1 sm:grid-cols-2   lg:grid-cols-3  place-items-center  gap-6">
               <div class="max-w-[300px] flex flex-col  items-center text-center">
                 <img class="w-[48px] mb-2" src="legal-solution-resources/images/business.png" alt="">
                  <h3 class="text-[40px] font-semibold mb-3">Business Law</h3>
@@ -117,7 +131,7 @@
                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected  humour.</p>
                </div>
             </div>
-          </div>
+          
         </section>
 
 
@@ -130,10 +144,10 @@
 
 
         <section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
+  <div class="max-w-6xl  px-4">
 
     <!-- Heading -->
-      <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="text-center max-w-xl mx-auto mb-14">
          <h2 class="text-4xl font-extrabold mb-4">Contact With Us</h2>
          <p class="text-gray-500">
             There are many variations of passages of Lorem Ipsum available,
@@ -145,7 +159,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
       <!-- Left Info Grid -->
-      <div class="grid grid-cols-2 border shadow-2xl rounded-lg overflow-hidden">
+      <div class="grid grid-cols-1 sm:grid-cols-2  border shadow-2xl rounded-lg overflow-hidden">
 
         <!-- Address -->
         <div class="p-8 border-b border-r text-center">
@@ -214,7 +228,7 @@
 
         <button
           type="submit"
-          class="w-full bg-[#B68C5A] text-white font-semibold py-4 rounded-md hover:bg-[#a37845] transition"
+          class="w-full bg-[#B68C5A] text-white font-semibold py-4 rounded-md hover:bg-[#a37845]"
         >
           Send Message
         </button>
